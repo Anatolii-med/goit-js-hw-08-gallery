@@ -117,7 +117,6 @@ const showModalImage = (event) => {
     const imgSetSrc = event.target.dataset.source;
     return (originalImage.src = imgSetSrc);
   }
-  return;
 };
 
 galeryEl.addEventListener("click", showModalImage);
@@ -134,7 +133,6 @@ const onCloseBtnClick = () => {
     originalImage.src = "";
     return modalWindow.classList.remove("is-open");
   }
-  return;
 };
 closeBtn.addEventListener("click", onCloseBtnClick);
 
@@ -150,7 +148,6 @@ const closeModalEscKeyboard = function (event) {
     originalImage.src = "";
     return modalWindow.classList.remove("is-open");
   }
-  return;
 };
 
 window.addEventListener("keydown", closeModalEscKeyboard);
